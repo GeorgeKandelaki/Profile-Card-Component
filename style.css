@@ -1,0 +1,119 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.8rem;
+    background-color: var(--dark-cyan);
+    color: var(--desaturated-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-frame {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section--1 {
+    width: 35.1rem;
+    height: 37.8rem;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+    height: 21rem;
+}
+
+.profile-img,
+.profile__stats--item {
+    text-align: center;
+}
+
+.bg-card {
+    width: 100%;
+}
+
+.img-profile {
+    border-radius: 50%;
+    border: 5px solid white;
+    transform: translateY(-53%);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile__name {
+    text-align: center;
+    margin-bottom: 2.8rem;
+    color: var(--dark-gray);
+}
+
+.profile__name strong {
+    color: var(--desaturated-blue);
+}
+
+.profile__stats {
+    width: 35rem;
+    height: 9.5rem;
+    border-top: 1px solid lightgray;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile__stats--item {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.profile__stats--item strong {
+    color: var(--desaturated-blue);
+    font-size: 1.8rem;
+}
+
+.bg-pattern-top {
+    position: absolute;
+    top: -60%;
+    left: -18%;
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: -80%;
+    right: -13%;
+}
+
+.bg-pattern-bottom,
+.bg-pattern-top {
+    z-index: -1;
+}

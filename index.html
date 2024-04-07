@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link href="style.css" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Profile card component</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+                display: none;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main-frame">
+            <img
+                class="bg-pattern-top"
+                src="images/bg-pattern-top.svg"
+                alt="pattern of Background"
+            />
+            <section class="section--1">
+                <div class="profile-img">
+                    <img
+                        src="images/bg-pattern-card.svg"
+                        alt="Background pattern of a card"
+                        class="bg-card"
+                    />
+                    <img
+                        src="images/image-victor.jpg"
+                        al="Image of Victor"
+                        class="img-profile"
+                    />
+                </div>
+
+                <div class="profile">
+                    <div class="profile__name">
+                        <strong>Victor Crest</strong> 26 <br />
+                        London
+                    </div>
+
+                    <div class="profile__stats">
+                        <div
+                            class="profile__stats--item profile__stats--followers"
+                        >
+                            <strong>80K</strong> <br />
+                            Followers
+                        </div>
+                        <div class="profile__stats--item profile__stats--likes">
+                            <strong>803K</strong> <br />
+                            Likes
+                        </div>
+                        <div
+                            class="profile__stats--item proflie__stats--photos"
+                        >
+                            <strong>1.4K</strong> <br />
+                            Photos
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+            </div>
+            <img
+                class="bg-pattern-bottom"
+                src="images/bg-pattern-bottom.svg"
+                alt="background pattern of bottom"
+            />
+        </main>
+    </body>
+</html>
